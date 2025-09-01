@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -23,13 +24,13 @@ const Home = () => {
         <p style={{ fontSize: "1.2rem", marginTop: "10px" }}>
           Explore a variety of cuisines from the comfort of your home
         </p>
-        <a
-          href="/menu"
+        <Link
+          to="/menu"
           className="btn btn-success mt-3"
           style={{ padding: "10px 30px", fontSize: "1rem" }}
         >
           Order Now
-        </a>
+        </Link>
       </section>
 
       {/* About Section */}
@@ -72,7 +73,7 @@ const Home = () => {
       <section className="bg-dark text-white py-4">
         <div className="container text-center">
           <h5>Contact Us</h5>
-          <p>Email: support@foodorder.com | Phone: +91 1234567890</p>
+          <p>Email: <a href="mailto:support@foodorder.com" className="text-white">support@foodorder.com</a> | Phone: +91 1234567890</p>
           <p>© 2025 FoodOrder. All rights reserved.</p>
         </div>
       </section>
