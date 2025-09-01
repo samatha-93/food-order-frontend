@@ -1,18 +1,16 @@
 import axios from "axios";
 
-// Use your deployed backend URL here
+// Use backend API URL from environment variable set in your .env file
 const API = axios.create({
-  baseURL: "https://food-order-backend-0xab.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api", // fallback to local backend
 });
 
-// Automatically attach token to every request
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
 
-// Auth endpoints
 export const registerUser = (formData) => API.post("/auth/register", formData);
 export const loginUser = (formData) => API.post("/auth/login", formData);
 
