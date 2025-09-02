@@ -20,7 +20,7 @@ const Home = () => {
           flexDirection: "column",
         }}
       >
-        <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>Delicious Food, Delivered Fast</h1>
+        <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}> SAMATHA'S SAVOURY Delicious Food, Delivered Fast</h1>
         <p style={{ fontSize: "1.2rem", marginTop: "10px" }}>
           Explore a variety of cuisines from the comfort of your home
         </p>
@@ -74,7 +74,7 @@ const Home = () => {
         <div className="container text-center">
           <h5>Contact Us</h5>
           <p>Email: <a href="mailto:support@foodorder.com" className="text-white">support@foodorder.com</a> | Phone: +91 1234567890</p>
-          <p>© 2025 FoodOrder. All rights reserved.</p>
+          <p> SAMATHA REDDY © 2025 FoodOrder. All rights reserved.</p>
         </div>
       </section>
     </div>
